@@ -13,12 +13,12 @@ A continuación se muestra una tabla resumen del equipo docente de IIC2613 2021-
 | Ayudante de Cátedra   | Felipe Ríos         |                |
 | Ayudante de Clases    | Juan Echevarri      | Jcechavarri    |
 | Ayudante de Clases    | Fernando Valladares | FeBalla        |
-| Ayudante de Controles | Jaime Middleton     |                |
+| Ayudante de Controles | Jaime Middleton     | jamidd         |
 | Ayudante              | Esteban Brzovic     |                |
 | Ayudante              | Christian Carstens  | chris-carstens |
 | Ayudante              | Sarah Everke        | SarahEverke    |
-| Ayudante              | Susana Figueroa     |                |
-| Ayudante              | Javiera Fuentes     |                |
+| Ayudante              | Susana Figueroa     | Sufigueroa     |
+| Ayudante              | Javiera Fuentes     | jfuentesg26    |
 | Ayudante              | Diego Gazmuri       | dtgazmuri      |
 | Ayudante              | Alex Medina         | aamedinaj      |
 | Ayudante              | Diego Mendieta      | diegomendieta  |
