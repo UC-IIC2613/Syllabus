@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="config.js"></script>
+
+<div align="center">
+<script>
+  document.write('<canvas id="myCanvas" align="center" width="');
+  document.write(40*(xrange+1));
+  document.write('" height="');
+  document.write(40*(yrange+1));
+  document.write('" style="border:2px solid #d3d3d3;">');
+</script>
+
+Your browser does not support the canvas element.
+</canvas>
+<p>
+  <button onmousedown="reset()">|&lt;&lt;</button>
+  <button onmousedown="drawcanvas(-1)">&lt;</button>
+  <button onmousedown="drawcanvas(1)">&gt;</button>
+</div>
+
+
+<script>
+  var time = 0;
+  colors = [
+  "#000000","#FF0000","#808080","#800000",
+  "#00FF00","#0000FF","#800080","#008080",
+  "#9966CC","#960018","#4B0082",
+  "#FF00AF","#FFBF00", "#FF4500","#FF2400",
+  "#B71C1C","#3E2723", "#F57F17"]
+
+  window.onload = function() {
+     drawcanvas(0);
+  }
+
+  function drawrobot(id,x,y) {
+     var canvas = document.getElementById("myCanvas");
+     var ctx = canvas.getContext("2d");
+     ctx.fillStyle = colors[id];
+     ctx.fillRect(40*x+5,40*y+10,30,10);
+     ctx.fillRect(40*x+5,40*y+10,30,10);
+     ctx.stroke();
+     ctx.beginPath();ctx.arc(40*x+10,40*y+25,5,0,2*Math.PI);ctx.fill();
+     ctx.beginPath();ctx.arc(40*x+20,40*y+25,5,0,2*Math.PI);ctx.fill();
+     ctx.beginPath();ctx.arc(40*x+30,40*y+25,5,0,2*Math.PI);ctx.fill();
+     ctx.beginPath();
+     ctx.stroke();
+     ctx.fillStyle = "#000000";
+  }
+
+  function drawobjective(id,x,y) {
+     var canvas = document.getElementById("myCanvas");
+     var ctx = canvas.getContext("2d");
+     ctx.fillStyle = colors[id];
+     ctx.fillRect(40*x+5,40*y+30,30,5);
+     ctx.stroke();
+     ctx.fillStyle = "#000000";
+  }
+
+  function drawrobots(delta) {
+   var canvas = document.getElementById("myCanvas");
+   var ctx = canvas.getContext("2d");
+   var img = document.getElementById("robot_image");
+
+   if (time + delta < events.length && time + delta >= 0) {
+    time = time + delta;
+   }
+
+   for (j=0;j<events[time].length;j++) {
+        drawrobot(events[time][j][0],events[time][j][1],events[time][j][2]);
+   }
+
+  }
+
+
+  function drawcanvas(delta) {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (i = 1; i <= xrange; i++) {
+       ctx.moveTo(40*i, 0);
+       ctx.lineTo(40*i, 40*(yrange+1));
+   }
+   for (i = 1; i <= yrange; i++) {
+       ctx.moveTo(0,40*i);
+       ctx.lineTo(40*(xrange+1),40*i);
+   }
+
+   for (j=0; j<obstacles.length; j++) {
+     ctx.fillRect(40*obstacles[j][0], 40*obstacles[j][1],40,40);
+   }
+   drawrobots(delta);
+
+   for (j=0; j<objectives[0].length; j++) {
+     drawobjective(objectives[time][j][0],objectives[time][j][1],objectives[time][j][2]);
+   }
+   ctx.stroke();
+
+  };
+
+  function reset() {
+     time=0;
+     drawcanvas();
+  }
+</script>
+
+
+</body>
+</html>

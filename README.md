@@ -12,7 +12,7 @@ A continuación se muestra una tabla resumen del equipo docente de IIC2613 2021-
 | Ayudante de Cátedra   | José Manuel Opaso   | jmopaso        |
 | Ayudante de Cátedra   | Felipe Ríos         | IngElecPuc     |
 | Ayudante de Clases    | Juan Echevarri      | Jcechavarri    |
-| Ayudante de Clases    | Fernando Valladares | FeBalla        |
+| Ayudante de Clases    | Fernando Balladares | FeBalla        |
 | Ayudante de Controles | Jaime Middleton     | jamidd         |
 | Ayudante              | Esteban Brzovic     | ebrzovic       |
 | Ayudante              | Christian Carstens  | chris-carstens |
