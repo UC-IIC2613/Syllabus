@@ -1,5 +1,5 @@
 % RECORDAR QUE ESTA PAUTA NO RESUELVE EL HECHO DE QUE SE TRANSMUTEN LAS POSICIONES DE LOS ROBOTS
-% ESTO QUEDA COMO DESAFÍO :)
+% ADEMÁS, LOS 'bound' SEÑALADOS SON PARA CUANDO RESUELVAN DICHO PROBLEMA. ESTO QUEDA COMO DESAFÍO :)
 
 % Existirá un máximo de instantes de tiempo, denotado por la constante bound que se puede ingresar 
 % por consola o predefinirla:
