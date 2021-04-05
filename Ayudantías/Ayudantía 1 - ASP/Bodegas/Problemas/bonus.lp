@@ -1,5 +1,5 @@
 % >> Definición del problema <<
-% Este problema puede ser resuelto con bound=9
+% Este problema puede ser resuelto con bound=3
 
 % Entre que valores se mueven X e Y (dimensiones del mapa)
 rangeX(0..2).
