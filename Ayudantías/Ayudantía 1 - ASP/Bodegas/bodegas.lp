@@ -9,3 +9,14 @@
 % 5) Definir un predicado que indique si un robot llegó o no a su objetivo:
 
 % 6) Descartar modelos que no cumplan con restricciones lógicas:
+
+% [NO BORRAR] El resto de líneas son necesarias para que el visualizador funcione correctamente:
+goal(R,X,Y,T) :- goal(R,X,Y), time(T).
+goal(R,X,Y,0) :- goal(R,X,Y).
+
+#show on/4.
+#show obstacle/2.
+#show rangeX/1.
+#show rangeY/1.
+#show exec/3.
+#show goal/4.
