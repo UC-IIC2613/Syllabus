@@ -28,6 +28,10 @@ A continuación se muestra una tabla resumen del equipo docente de IIC2613 2021-
 
 La página de [Issues](../../issues) se utilizará como foro para preguntas.
 
+## Videos ayudantías
+
+Los links de las grabaciones de ayudantías los encontrarán en el siguiente [link](https://github.com/UC-IIC2613/Syllabus/tree/main/Ayudantías/Ayudantía%201%20-%20ASP).
+
 ## Otros
 
 Cualquier duda administrativa y/o personal debe ser realizada al correo oficial del curso iic2613@ing.puc.cl
