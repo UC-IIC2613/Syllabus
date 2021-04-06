@@ -30,7 +30,7 @@ La página de [Issues](../../issues) se utilizará como foro para preguntas.
 
 ## Videos ayudantías
 
-Los links de las grabaciones de ayudantías los encontrarán en el siguiente [link](https://github.com/UC-IIC2613/Syllabus/tree/main/Ayudantías/Ayudantía%201%20-%20ASP).
+Los links de las grabaciones de ayudantías los encontrarán en el siguiente [link](https://github.com/UC-IIC2613/Syllabus/tree/main/Ayudantías).
 
 ## Otros
 
