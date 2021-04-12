@@ -119,7 +119,6 @@ var Environment = function(i, j, width, height, trigger=false) {
             const hole = this.holes[i];
 
             ctx.drawImage(resources.images['hole'], hole[0]*this.width, hole[1]*this.height, this.width, this.height);
-
             this.drawText(ctx, breeze, hole[0], hole[1] + 1, 3);
             this.drawText(ctx, breeze, hole[0], hole[1] - 1, 3);
             this.drawText(ctx, breeze, hole[0] + 1, hole[1], 3);

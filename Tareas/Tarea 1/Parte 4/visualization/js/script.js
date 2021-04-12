@@ -12,7 +12,7 @@ function restart(text = false) {
   if (text) {
     let info = text
       .split(/\r?\n/)
-      .map((x) => x.split(",").filter((x) => x != ""));
+      .map((x) => x.split(",").filter((x) => x != "").map(x => parseInt(x)));
     info[3] = info[3].reduce(function (result, value, index, array) {
         if (index % 2 === 0) result.push(array.slice(index, index + 2));
         return result;
@@ -298,7 +298,9 @@ $(function () {
   $(".btn-restart").click(function () {
     $("#messages").text("Para simular debes cargar nuevamente el archivo.");
     env = false;
-    fr = null;
+    //fr = new FileReader();
+    // console.log("hola");
+    $("#fileform")[0].reset();
     restart();
   });
 
