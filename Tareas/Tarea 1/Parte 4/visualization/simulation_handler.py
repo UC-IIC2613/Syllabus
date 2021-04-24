@@ -1,44 +1,8 @@
 ################## NO TOCAR ####################
 ### Módulo para escribir archivo simulation.txt
 
-class ToWrite:
-
-    def __init__(self):
-        self.actions = list()
-        self.shots = list()
-        self.write_actions = str()
-        self.write_shots = str()
-
-    def enter_action(self, action):
-        if action[0] == 'goto':
-            self.actions.append((action[2], action[1]))
-            self.write_actions += f'{action[2]},{action[1]},'
-        elif action[0] == 'shoot':
-            self.shots.append((action[2], action[1]))
-
-    def shots_calculator(self):
-        for shot in self.shots:
-            for action in self.actions:
-                if (action[0] - 1, action[1]) == shot:
-                    self.write_shots += f'{action[0]},{action[1]},'
-                    break
-                elif (action[0] + 1, action[1]) == shot:
-                    self.write_shots += f'{action[0]},{action[1]},'
-                    break
-                elif (action[0], action[1] - 1) == shot:
-                    self.write_shots += f'{action[0]},{action[1]},'
-                    break
-                elif (action[0], action[1] + 1) == shot:
-                    self.write_shots += f'{action[0]},{action[1]},'
-                    break
-
-
-
 def write_simulation(base, append=False):
-    ## Aca debo manejar: Si le disparo al wumpus, poner que sea
-    ## cuando estoy al lado.
     if not append:
-        # Esto esta bien.
         with open('simulation.txt', 'w') as f:
             player = str()
             pits = str()

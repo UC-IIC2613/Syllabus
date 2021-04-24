@@ -4,6 +4,8 @@ var canvas, // Canvas DOM element
   env,
   isAlive = true,
   isFinished = false,
+  killx,
+  killy,
   player;
 
 function restart(text = false) {
@@ -22,15 +24,9 @@ function restart(text = false) {
       return result;
     }, []);
     info[5] = info[5].reduce(function (result, value, index, array) {
-      if (index % 2 === 0) result.push(array.slice(index, index + 2));
+      if (index % 3 === 0) result.push(array.slice(index, index + 3));
       return result;
     }, []);
-    if (info[6]) {
-      info[6] = info[6].reduce(function (result, value, index, array) {
-        if (index % 2 === 0) result.push(array.slice(index, index + 2));
-        return result;
-      }, []);
-    }
     env = new Environment(info[0][0], info[0][1], 64, 64, info);
     pos = [64 * info[1][0], 64 * info[1][1]];
   }
@@ -83,7 +79,8 @@ function update() {
     player.score += 1;
   }
 
-  var deadWumpus = player.kill(keys);
+  var deadWumpus = player.kill(keys, killx, killy);
+  //console.log(deadWumpus);
 
   if (deadWumpus) {
     // player.score += 1000;
@@ -210,39 +207,16 @@ function simulation(info) {
 
   function myLoop() {
     setTimeout(function () {
-      let [x, y] = info[5][i];
-      let arrow_x, arrow_y, gold_x, gold_y, wumpus_x, wumpus_y;
-      if (info[6] && info[6].length) {
-        [arrow_x, arrow_y] = info[6][0];
-      }
-      if (info[3].length) {
-        [wumpus_x, wumpus_y] = info[3][0];
-      }
+      let [action, y, x] = info[5][i];
+      let gold_x, gold_y;
       if (info[2]) {
         [gold_x, gold_y] = info[2];
       }
       // Mato wumpus
-      if ((player.x / 64 == arrow_x && player.y / 64 == arrow_y) && (x == wumpus_x && y == wumpus_y)) {
+      if (action) {
         keys.space = true;
-        i--;
-        info[6] = info[6].slice(1);
-        info[3] = info[3].slice(1);
-        // Izquierda
-        if (player.x / 64 - 1 == x && player.y / 64 == y) {
-          player.direction = FACING_TO_LEFT;
-        }
-        // Derecha 
-        else if (player.x / 64 + 1 == x && player.y / 64 == y) {
-          player.direction = FACING_TO_RIGHT;
-        }
-        // Arriba
-        else if (player.x / 64 == x && player.y / 64 - 1 == y) {
-          player.direction = FACING_TO_UP;
-        }
-        // Abajo
-        else if (player.x / 64 == x && player.y / 64 + 1 == y) {
-          player.direction = FACING_TO_DOWN;
-        }
+        killx = x;
+        killy = y;
       }
       // Izquierda
       else if (player.x / 64 - 1 == x && player.y / 64 == y) {

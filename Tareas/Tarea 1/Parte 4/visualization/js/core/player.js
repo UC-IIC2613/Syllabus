@@ -21,7 +21,7 @@ var Player = function(env, x, y) {
         this.env.visible[this.getPosI()][this.getPosJ()] = 1;
     }
 
-    this.kill = function(keys) {
+    this.kill = function(keys, killi, killj) {
 
         var deadWumpus = null;
 
@@ -36,14 +36,7 @@ var Player = function(env, x, y) {
 
             this.score++;
 
-            var pos = null;
-
-            if(this.direction == FACING_TO_UP) pos = {i:this.getPosI(), j:this.getPosJ()-1};
-            if(this.direction == FACING_TO_DOWN) pos = {i:this.getPosI(), j:this.getPosJ()+1};
-            if(this.direction == FACING_TO_LEFT) pos = {i:this.getPosI()-1, j:this.getPosJ()};
-            if(this.direction == FACING_TO_RIGHT) pos = {i:this.getPosI()+1, j:this.getPosJ()};
-
-            deadWumpus = this.env.get(this.env.wumpus, pos.i, pos.j);
+            deadWumpus = this.env.get(this.env.wumpus, killi, killj);
 
             if (deadWumpus) {
                 resources.play("arrow");
