@@ -8,5 +8,4 @@ A continuación se muestra una tabla resumen de las ayudantías con su fecha de 
 | Ayudantía 2 - Negación| 13 de abril         | [Link](https://www.youtube.com/watch?v=v86IKJYU-Ak)|
 | Ayudantía 3 - Tarea 1 | 26 de abril         | [Link](https://www.youtube.com/watch?v=4kC7XviHOQ8)|
 | Ayudantía 4 - Preparación Tarea 2 | 3 de mayo | [Link](https://youtu.be/tJDLIIb0WlY)|
-
-
+| Ayudantía 5 - Tarea 2 | 18 de mayo | [Link](https://youtu.be/MQiy4DR4KpQ)|
