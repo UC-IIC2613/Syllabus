@@ -11,3 +11,4 @@ A continuación se muestra una tabla resumen de las ayudantías con su fecha de 
 | Ayudantía 5 - Tarea 2             | 18 de mayo  | [Link](https://youtu.be/MQiy4DR4KpQ)                |
 | Ayudantía 6 - SVM                 | 31 de mayo  | [Link](https://www.youtube.com/watch?v=7hiFfOC-Idk) |
 | Ayudantía 7 - Árboles de Decisión | 7 de junio  | [Link](https://www.youtube.com/watch?v=qy97p3TiDfk) |
+| Ayudantía 8 - Naive Bayes y T3    | 14 de junio | [Link](https://www.youtube.com/watch?v=BonoZc7H3yE) |
