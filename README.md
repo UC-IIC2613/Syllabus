@@ -6,13 +6,12 @@ A continuación se muestra una tabla resumen del equipo docente de IIC2613 2021-
 
 | Cargo                 | Nombre              | Github         |
 |-----------------------|---------------------|----------------|
-| Profesor              | Jorge Baier         |                |
+| Profesor              | Jorge Baier         | jabaier        |
 | Profesor              | Andrés Villa        | ojedaf         |
-| Coordinadora          | Daniela Poblete     | Dnpoblete      |
+| Coordinador           | Fernando Balladares | FeBalla        |
 | Ayudante de Cátedra   | José Manuel Opaso   | jmopaso        |
 | Ayudante de Cátedra   | Felipe Ríos         | IngElecPuc     |
 | Ayudante de Clases    | Juan Echevarri      | Jcechavarri    |
-| Ayudante de Clases    | Fernando Balladares | FeBalla        |
 | Ayudante de Controles | Jaime Middleton     | jamidd         |
 | Ayudante              | Esteban Brzovic     | ebrzovic       |
 | Ayudante              | Christian Carstens  | chris-carstens |
@@ -31,6 +30,10 @@ La página de [Issues](../../issues) se utilizará como foro para preguntas.
 ## Videos ayudantías
 
 Los links de las grabaciones de ayudantías los encontrarán en el siguiente [link](https://github.com/UC-IIC2613/Syllabus/tree/main/Ayudantías).
+
+## Notas
+
+Pueden encontrar la plantilla con las notas del curso en el siguiente [link](https://docs.google.com/spreadsheets/d/1uRDYKyGuhufLnEd51eSc_Eeo9CS2IwkIJiMx0dROuKw/edit?usp=sharing).
 
 ## Otros
 
