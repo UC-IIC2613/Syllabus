@@ -14,3 +14,4 @@ A continuación se muestra una tabla resumen de las ayudantías con su fecha de 
 | Ayudantía 8 - Naive Bayes y T3       | 14 de junio | [Link](https://www.youtube.com/watch?v=BonoZc7H3yE) |
 | Ayudantía 9 - Redes Neuronales       | 28 de junio | [Link](https://www.youtube.com/watch?v=gAPmUsfJOMA) |
 | Ayudantía 10 - Aprendizaje Reforzado | 1 de julio  | [Link](https://www.youtube.com/watch?v=d99eFvvLi5o) |
+| Ayudantía 11 - T4                    | 8 de julio  | [Link](https://youtu.be/jhAV8GeI18E)                |
